@@ -6,14 +6,14 @@ import type {
   PerformanceData,
   JavaScriptAnalysis,
 } from './types';
-import Treemap from './Treemap';
-import InsightsPanel from './InsightsPanel';
-import FileExplorer from './FileExplorer';
-import StatisticsPanel from './StatisticsPanel';
-import PerformancePanel from './PerformancePanel';
-import { PerformanceAnalyzer } from '../utils/performanceAnalyzer';
+import Treemap from './components/Treemap';
+import InsightsPanel from './components/InsightsPanel';
+import FileExplorer from './components/FileExplorer';
+import StatisticsPanel from './components/StatisticsPanel';
+import PerformancePanel from './components/PerformancePanel';
+import { PerformanceAnalyzer } from './utils/performanceAnalyzer';
 
-import JavaScriptAnalysisPanel from './JavaScriptAnalysisPanel';
+import JavaScriptAnalysisPanel from './components/JavaScriptAnalysisPanel';
 
 const BundleAnalysis = ({ bundleData, onReset }: BundleAnalysisProps) => {
   const [selectedModule, setSelectedModule] = useState<BundleModule | null>(
